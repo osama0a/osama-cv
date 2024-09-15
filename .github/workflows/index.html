@@ -3,66 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osama Fouad - CV</title>
+    <title>Osama Fouad - Professional CV</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 40px 15%;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4a90e2;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a90e2;
+            display: inline-block;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
-        li {
+
+        ul li {
             margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Styling for sections */
+        .personal-info, .skills, .experience, .projects, .education, .certifications, .languages, .qualities {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out;
+            margin-bottom: 20px;
+        }
+
+        .personal-info li, .skills li, .experience li, .projects li, .certifications li, .qualities li {
+            transition: transform 0.3s ease;
+        }
+
+        .personal-info li:hover, .skills li:hover, .experience li:hover, .projects li:hover, .certifications li:hover, .qualities li:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a90e2;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Osama Fouad Mohammed</h1>
-    <p>Detail-oriented Software Quality Assurance Engineer with over two years of experience in testing.</p>
 
-    <h2>Personal Information</h2>
-    <ul>
-        <li><strong>Phone:</strong> +967771313173</li>
-        <li><strong>Email:</strong> os.alshibami@gmail.com</li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/os-alshibami">linkedin.com/in/os-alshibami</a></li>
-    </ul>
+    <!-- Header Section -->
+    <header>
+        <h1>Osama Fouad Mohammed</h1>
+        <p>Software Quality Assurance Engineer with over two years of experience</p>
+    </header>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>SohobCom:</strong> Software Quality Assurance Engineer (Nov 2023 - Present)</li>
-        <li><strong>YottaGate:</strong> Software Quality Assurance Engineer (Sep 2022 - Nov 2023)</li>
-    </ul>
+    <!-- Personal Information -->
+    <section class="personal-info">
+        <h2>Personal Information</h2>
+        <ul>
+            <li><strong>Phone:</strong> +967771313173</li>
+            <li><strong>Email:</strong> os.alshibami@gmail.com</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/os-alshibami" target="_blank">linkedin.com/in/os-alshibami</a></li>
+        </ul>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Electronic Wallet Platform</li>
-        <li>E-commerce Platform</li>
-        <li>Bill Payment Platform</li>
-        <li>Video Conferencing Platform</li>
-    </ul>
+    <!-- Work Experience Section -->
+    <section class="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>SohobCom (Nov 2023 - Present):</strong> Software Quality Assurance Engineer. Developed and executed comprehensive test plans, conducted tests, collaborated with teams to resolve issues early.</li>
+            <li><strong>YottaGate (Sep 2022 - Nov 2023):</strong> Improved user acceptance testing by 15%, created and implemented test cases, identified software defects.</li>
+        </ul>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <p>Test case design, test execution, defect reporting, regression testing, exploratory testing, requirement analysis, collaboration.</p>
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Electronic Wallet Platform: Secure digital payments.</li>
+            <li>E-commerce Platform: User-friendly navigation, secure payment gateways.</li>
+            <li>Bill Payment Platform: Bill settlement integration with utility providers.</li>
+            <li>Video Conferencing Platform: Real-time video conferencing, screen sharing, multi-party calls.</li>
+        </ul>
+    </section>
 
-    <h2>Education</h2>
-    <p>Bachelor's Degree in IT - University of Modern Sciences, Yemen (2018-2022)</p>
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Test case design, execution, and reporting.</li>
+            <li>Defect reporting and regression testing.</li>
+            <li>Exploratory testing and requirement analysis.</li>
+            <li>Collaboration and communication with development teams.</li>
+            <li>Tools: DevOps (Scrum), JIRA, Selenium IDE.</li>
+        </ul>
+    </section>
 
-    <h2>Courses and Certifications</h2>
-    <ul>
-        <li>Google Data Analytics Course (May 2023)</li>
-        <li>Time Management Course (Dec 2023)</li>
-    </ul>
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Bachelor's Degree in IT:</strong> University of Modern Sciences, Yemen (2018-2022).</li>
+        </ul>
+    </section>
 
-    <h2>Languages</h2>
-    <p>Arabic (Native), English (Very Good)</p>
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <h2>Courses & Certifications</h2>
+        <ul>
+            <li>Google Data Analytics Course (May 2023).</li>
+            <li>Time Management Course (Dec 2023).</li>
+        </ul>
+    </section>
 
-    <h2>Personal Qualities</h2>
-    <p>Quick learner, team player, time management, dedication, problem-solving.</p>
+    <!-- Languages Section -->
+    <section class="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Arabic (Native), English (Very Good).</li>
+        </ul>
+    </section>
+
+    <!-- Personal Qualities Section -->
+    <section class="qualities">
+        <h2>Personal Qualities</h2>
+        <ul>
+            <li>Quick learner, team player, time management, dedication, problem-solving.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Osama Fouad Mohammed | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
